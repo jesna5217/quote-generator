@@ -59,7 +59,6 @@ const handleDelete=(data)=>{
 <button><i class="fa-solid fa-floppy-disk"  onClick={handleShow}></i></button></div>
 
 
-
   
 <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -85,27 +84,7 @@ const handleDelete=(data)=>{
           </Button>
         </Modal.Footer>
       </Modal>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div className='text-center'  style={{ fontFamily: "Dancing Script, cursive",fontSize:'30px'}}>
+<div className='text-center tag'  style={{ fontFamily: "Dancing Script, cursive",fontSize:'30px'}}>
 
   <p>{quote}</p>
   

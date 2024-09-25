@@ -3,7 +3,7 @@
   background-image: url(../public/assets/10213790.jpg);
  background-size:cover ;
  position: relative;
- font-family: "Dancing Script, cursive";
+
  padding-top: 220px;
 }
 .heading{
@@ -13,5 +13,22 @@
  color: green;
   
 }
+@media (min-width: 600px) and (max-width: 959px){
 
-
+.main{
+  padding-top: 150px;
+}
+.heading h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+}
+@media screen and (max-width:600px) {
+  .main{
+    padding-top: 160px;
+  }
+  .heading h1{
+    font-size: 25px;
+    font-weight: 600 ;
+  }
+}
