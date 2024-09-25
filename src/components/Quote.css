@@ -1,0 +1,71 @@
+.box{
+    height: 300px;
+    width: 900px;
+    background: linear-gradient(rgba(0,0,0,.2),rgba(97, 92, 92, 0.3));
+    border-radius: 15px;
+  position: absolute;
+  top: 25%;
+  left: 24%;
+  border: 1px solid gold;
+}
+.icons{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    
+}
+.icons button,.trash{
+    background: transparent;
+    border: none;
+}
+
+.icons button i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.liked{
+    position: absolute;
+    left: 24%;
+    top: 60%;
+}
+.liked-quotes{
+    background: linear-gradient(rgba(0,0,0,.2),rgba(97, 92, 92, 0.3));
+    border-radius: 5px;
+    border: 1px solid gold;
+
+
+  list-style: none;
+text-align: center;
+  margin-bottom: 20px;
+
+ 
+}
+
+
+@media (min-width: 600px) and (max-width: 959px){
+    .box{
+        height: 300px;
+    width: 600px;
+   
+   
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border: 1px solid gold;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main{
+        width: 100%;
+    }
+    .box{
+        height: 400px;
+    width: 300px;
+   
+   
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border: 1px solid gold;
+    }
+}

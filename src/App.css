@@ -1,0 +1,17 @@
+.main{
+  height: 100vh;
+  background-image: url(../public/assets/10213790.jpg);
+ background-size:cover ;
+ position: relative;
+ font-family: "Dancing Script, cursive";
+ padding-top: 220px;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ color: green;
+  
+}
+
+
