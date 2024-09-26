@@ -4,6 +4,7 @@ import './Quote.css'
 import Collapse from 'react-bootstrap/Collapse';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import { getQuote } from '../Axios/allApi';
 function Quote() {
   const [open, setOpen] = useState(false);
   const[isClicked,setIsClicked]=useState(false);
@@ -20,6 +21,15 @@ function Quote() {
   const handleShow = () => setShow(true);
 
 useEffect(()=>{
+// const fetchQuotes=async()=>{
+//   const data=await getQuote()
+//   setQuotes(data)
+  
+  
+// }
+
+// fetchQuotes()
+// console.log(quotes);
     axios.get("https://dummyjson.com/quotes").then(response=>{
     let value=response.data.quotes;    
       console.log(value);
@@ -62,7 +72,7 @@ const handleDelete=(data)=>{
   
 <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Favourites❤️</Modal.Title>
+          <Modal.Title>Favorites❤️</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         {likedQuotes.length>0?
@@ -86,7 +96,7 @@ const handleDelete=(data)=>{
       </Modal>
 <div className='text-center tag'  style={{ fontFamily: "Dancing Script, cursive",fontSize:'30px'}}>
 
-  <p>{quote}</p>
+  <p>" {quote} "</p>
   
   
 </div>
